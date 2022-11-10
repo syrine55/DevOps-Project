@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  jenkins:
+    image: "jenkinsci/blueocean"
+    ports:
+      - "8080:8080"
+    volumes:
+      - jenkins_home:/var/jenkins_home
+  sonar:
+    image: "sonarqube"
+    ports:
+      - "9000:9000"
+    volumes:
+      - /home/sonarqube/data:/opt/sonarqube/data
+volumes:
+  jenkins_home:
+    external: true
