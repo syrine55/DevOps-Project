@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   jenkins:
-    image: "jenkinsci/blueocean"
+    image: "jenkins/jenkins"
     ports:
       - "8080:8080"
     volumes:
