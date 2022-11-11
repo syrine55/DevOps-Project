@@ -11,7 +11,7 @@ pipeline {
         }
         stage('sonar') {
             steps {
-                sh "mvn sonar:sonar -Dsonar.login=admin -Dsonar.password=root";
+                sh "mvn sonar:sonar -Dsonar.login=admin -Dsonar.password=vagrant";
             }
         }
         stage('unit testing') {
