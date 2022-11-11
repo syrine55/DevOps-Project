@@ -9,6 +9,11 @@ pipeline {
                     credentialsId: 'gitCredentials';
             }
         }
+        stage('unit testing') {
+            steps {
+                sh "mvn clean test -Ptest";
+            }
+        }
         stage('build') {
             steps {
                 sh "mvn clean package";
