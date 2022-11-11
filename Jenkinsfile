@@ -9,6 +9,11 @@ pipeline {
                     credentialsId: 'gitCredentials';
             }
         }
+        stage('sonar') {
+            steps {
+                sh "mvn sonar:sonar -Dsonar.login=admin -Dsonar.password=root";
+            }
+        }
         stage('unit testing') {
             steps {
                 sh "mvn clean test -Ptest";
