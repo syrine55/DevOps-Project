@@ -17,7 +17,7 @@ services:
     volumes:
       - /home/vagrant/sonarqube/data:/opt/sonarqube/data
     ports:
-      - 9000:9000
+      - 9090:9090
   mysqldb:
     container_name: mysqldb
     image: mysql:8
