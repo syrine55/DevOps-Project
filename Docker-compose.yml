@@ -39,3 +39,5 @@ volumes:
    external: true
  mysql_volume:
    external: true 
+ nexus-data:
+   external: true 
