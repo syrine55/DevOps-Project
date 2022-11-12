@@ -9,7 +9,7 @@ services:
   nexus:
     image: sonatype/nexus3
     volumes:
-      - /home/nexus/nexus-data:/nexus-data
+      - nexus-data:/nexus-data
     ports:
       - 8081:8081
   sonar:
@@ -38,4 +38,6 @@ volumes:
  jenkins_home:
    external: true
  mysql_volume:
+   external: true 
+ nexus-data:
    external: true 
