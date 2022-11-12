@@ -1,6 +1,8 @@
 package com.esprit.examen.services;
 
+import com.esprit.examen.entities.Produit;
 import com.esprit.examen.entities.Stock;
+import com.esprit.examen.repositories.ProduitRepository;
 import com.esprit.examen.repositories.StockRepository;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -17,45 +19,45 @@ import static org.mockito.Mockito.when;
 
 public class ProduitServiceTestMockito {
     @Mock
-    StockRepository stockRepository;
+    ProduitRepository produitRepository;
     @InjectMocks
-    StockServiceImpl stockService;
+    ProduitServiceImpl produitService;
 
     @Test
-    public void testRetrieveStockById(){
-        Stock s = new Stock("stock test", 10, 100);
-        Mockito.when(stockRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(s));
-        assertNotNull(stockService.retrieveStock(1L));
+    public void testRetrieveProduitById(){
+        Produit s = new Produit(10L,"stock test", "libelle test", 100);
+        Mockito.when(produitRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(s));
+        assertNotNull(produitService.retrieveProduit(10L));
         System.out.println("retrieve done");
     }
 
     @Test
-    public void testAddStock()
+    public void testAddProduit()
     {
-        Stock s = new Stock("stock test", 10, 100);
-        stockService.addStock(s);
-        verify(stockRepository, times(1)).save(s);
+        Produit s = new Produit(20L,"produit test", "libelle test", 100);
+        produitService.addProduit(s);
+        verify(produitRepository, times(1)).save(s);
         System.out.println("add done");
     }
 
     @Test
-    public void testGetStock()
+    public void testGetProduit()
     {
-        List<Stock> stocks = new ArrayList<Stock>();
-        Stock s1 = new Stock("stock 1", 10, 100);
-        Stock s2 = new Stock("stock 2", 20, 100);
-        stocks.add(s1);
-        stocks.add(s2);
-        when(stockRepository.findAll()).thenReturn(stocks);
+        List<Produit> produits = new ArrayList<Produit>();
+        Produit s1 = new Produit(10L,"stock 1", "libelle test", 100);
+        Produit s2 = new Produit(20L,"stock 2", "libelle test", 100);
+        produits.add(s1);
+        produits.add(s2);
+        when(produitRepository.findAll()).thenReturn(produits);
         System.out.println("get list done");
     }
 
     @Test
-    public void testUpdateStockById()
+    public void testUpdateProduitById()
     {
-        Stock s = new Stock("stock test", 10, 100);
-        when(stockRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(s));
-        stockService.updateStock(s);
+        Produit s = new Produit(30L,"stock test", "test update", 100);
+        when(produitRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(s));
+        produitService.updateProduit(s);
         System.out.println("update done");
     }
 }
