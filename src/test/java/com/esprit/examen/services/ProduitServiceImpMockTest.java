@@ -15,7 +15,7 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 @SpringBootTest
 
-public class ProduitServiceImpMockTest {
+class ProduitServiceImpMockTest {
     @Mock
     ProduitRepository produitRepository;
     @InjectMocks
@@ -46,6 +46,7 @@ public class ProduitServiceImpMockTest {
         Produit s2 = new Produit(20L,"stock 2", "libelle test", 100);
         produits.add(s1);
         produits.add(s2);
+        assertNotNull(produits);
         when(produitRepository.findAll()).thenReturn(produits);
         System.out.println("get list done");
     }
