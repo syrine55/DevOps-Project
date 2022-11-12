@@ -9,7 +9,7 @@ services:
   nexus:
     image: sonatype/nexus3
     volumes:
-      - nexus-data:/nexus-data
+      - nexus-data:/var/nexus-data
     ports:
       - 8081:8081
   sonar:
