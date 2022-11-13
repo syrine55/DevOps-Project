@@ -19,7 +19,6 @@ import lombok.*;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
 public class Produit implements Serializable {
 
 	/**
