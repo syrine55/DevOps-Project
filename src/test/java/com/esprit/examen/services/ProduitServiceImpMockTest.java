@@ -23,7 +23,7 @@ class ProduitServiceImpMockTest {
 
     @Test
     void testRetrieveProduitById(){
-        Produit s = new Produit(10L,"stock test", "libelle test", 100);
+        Produit s = new Produit(10L,"stock test", "libelle test", 100,null,null,null,null,null);
         Mockito.when(produitRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(s));
         assertNotNull(produitService.retrieveProduit(10L));
         System.out.println("retrieve done");
@@ -32,7 +32,7 @@ class ProduitServiceImpMockTest {
     @Test
     void testAddProduit()
     {
-        Produit s = new Produit(20L,"produit test", "libelle test", 100);
+        Produit s = new Produit(20L,"produit test", "libelle test", 100,null,null,null,null,null);
         produitService.addProduit(s);
         verify(produitRepository, times(1)).save(s);
         System.out.println("add done");
@@ -42,8 +42,8 @@ class ProduitServiceImpMockTest {
     void testGetProduit()
     {
         List<Produit> produits = new ArrayList<Produit>();
-        Produit s1 = new Produit(10L,"stock 1", "libelle test", 100);
-        Produit s2 = new Produit(20L,"stock 2", "libelle test", 100);
+        Produit s1 = new Produit(10L,"stock 1", "libelle test", 100,null,null,null,null,null);
+        Produit s2 = new Produit(20L,"stock 2", "libelle test", 100,null,null,null,null,null);
         produits.add(s1);
         produits.add(s2);
         assertNotNull(produits);
@@ -54,7 +54,7 @@ class ProduitServiceImpMockTest {
     @Test
     void testUpdateProduitById()
     {
-        Produit s = new Produit(30L,"stock test", "test update", 100);
+        Produit s = new Produit(30L,"stock test", "test update", 100,null,null,null,null,null);
         assertNotNull(s);
         when(produitRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(s));
         produitService.updateProduit(s);

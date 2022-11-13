@@ -31,7 +31,7 @@ public class Produit implements Serializable {
 	private String codeProduit;
 	private String libelleProduit;
 	private float prix;
-	/*@Temporal(TemporalType.DATE)
+	@Temporal(TemporalType.DATE)
 	private Date dateCreation;
 	@Temporal(TemporalType.DATE)
 	private Date dateDerniereModification;
@@ -43,7 +43,7 @@ public class Produit implements Serializable {
 	private Set<DetailFacture> detailFacture;
 	@ManyToOne
 	@JsonIgnore
-	private CategorieProduit categorieProduit;*/
+	private CategorieProduit categorieProduit;
 
 
 
