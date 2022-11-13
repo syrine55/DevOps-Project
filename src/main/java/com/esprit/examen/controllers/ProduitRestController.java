@@ -7,7 +7,6 @@ import com.esprit.examen.entities.Produit;
 import com.esprit.examen.services.IProduitService;
 
 import io.swagger.annotations.Api;
-import springfox.documentation.swagger2.mappers.ModelMapper;
 
 
 @RestController
@@ -51,7 +50,7 @@ public class ProduitRestController {
 	}
 
 
-	
+
 
 
 }

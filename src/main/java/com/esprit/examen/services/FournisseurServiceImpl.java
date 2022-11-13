@@ -31,7 +31,7 @@ public class FournisseurServiceImpl implements IFournisseurService {
 
 	@Override
 	public List<Fournisseur> retrieveAllFournisseurs() {
-		List<Fournisseur> fournisseurs = (List<Fournisseur>) fournisseurRepository.findAll();
+		List<Fournisseur> fournisseurs =  fournisseurRepository.findAll();
 		for (Fournisseur fournisseur : fournisseurs) {
 			log.info(" fournisseur : " + fournisseur);
 		}
@@ -39,11 +39,10 @@ public class FournisseurServiceImpl implements IFournisseurService {
 	}
 
 
-	public Fournisseur addFournisseur(Fournisseur f /*Master*/) {
-		DetailFournisseur df= new DetailFournisseur();//Slave
-		df.setDateDebutCollaboration(new Date()); //util
-		//On affecte le "Slave" au "Master"
-		f.setDetailFournisseur(df);	
+	public Fournisseur addFournisseur(Fournisseur f ) {
+		DetailFournisseur df= new DetailFournisseur();
+		df.setDateDebutCollaboration(new Date());
+		f.setDetailFournisseur(df);
 		fournisseurRepository.save(f);
 		return f;
 	}
@@ -54,12 +53,7 @@ public class FournisseurServiceImpl implements IFournisseurService {
 		return df;
 	}
 
-	public Fournisseur updateFournisseur(Fournisseur f) {
-		DetailFournisseur df = saveDetailFournisseur(f);
-		f.setDetailFournisseur(df);	
-		fournisseurRepository.save(f);
-		return f;
-	}
+
 
 	@Override
 	public void deleteFournisseur(Long fournisseurId) {
