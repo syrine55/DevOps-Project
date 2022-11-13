@@ -40,6 +40,7 @@ public class CategorieProduitController {
 
 	@PostMapping("/add-categorieProduit")
 	@ResponseBody
+	@SuppressWarnings("java:S4684")
 	public CategorieProduit addCategorieProduit(@RequestBody CategorieProduit cp) {
 		return categorieProduitService.addCategorieProduit(cp);
 	}
