@@ -18,7 +18,7 @@ import io.swagger.annotations.Api;
 @CrossOrigin("*")
 public class StockRestController {
 
-	@Autowired
+	/*@Autowired
 	IStockService stockService;
 
 	@GetMapping("/retrieve-all-stocks")
@@ -52,7 +52,7 @@ public class StockRestController {
 	public Stock modifyStock(@RequestBody Stock stock) {
 		return stockService.updateStock(stock);
 	}
-
+*/
 
 
 

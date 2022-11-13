@@ -12,7 +12,7 @@ import lombok.extern.slf4j.Slf4j;
 @Service
 @Slf4j
 public class StockServiceImpl implements IStockService {
-
+/*
 	@Autowired
 	StockRepository stockRepository;
 
@@ -59,7 +59,7 @@ public class StockServiceImpl implements IStockService {
 		log.info("Method execution time: " + elapsedTime + " milliseconds.");
 
 		return stock;
-	}
+	}*/
 
 
 

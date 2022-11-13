@@ -5,7 +5,7 @@ import com.esprit.examen.entities.Stock;
 
 public interface IStockService {
 
-	List<Stock> retrieveAllStocks();
+/*	List<Stock> retrieveAllStocks();
 
 	Stock addStock(Stock s);
 
@@ -13,5 +13,5 @@ public interface IStockService {
 
 	Stock updateStock(Stock u);
 
-	Stock retrieveStock(Long id);
+	Stock retrieveStock(Long id);*/
 }
