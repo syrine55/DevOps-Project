@@ -8,6 +8,13 @@
 		<relativePath/>
 		<!--  lookup parent from repository  -->
 	</parent>
+	<!--- Deploy to Nexus -->
+	<distributionManagement>
+		<repository>
+			<id>nexus-site</id>
+			<url>http://192.168.1.52:8081/repository/maven-repo-tp-achat/</url>
+		</repository>
+	</distributionManagement>
 	<groupId>com.esprit.examen</groupId>
 	<artifactId>tpAchatProject</artifactId>
 	<version>1.0</version>
