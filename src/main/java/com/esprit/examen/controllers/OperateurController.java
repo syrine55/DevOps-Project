@@ -14,7 +14,7 @@ import io.swagger.annotations.Api;
 @RequestMapping("/operateur")
 @CrossOrigin("*")
 public class OperateurController {
-
+/*
 	@Autowired
 	IOperateurService operateurService;
 	
@@ -43,6 +43,6 @@ public class OperateurController {
 		operateurService.deleteOperateur(operateurId);
 	}
 
-
+*/
 	
 }

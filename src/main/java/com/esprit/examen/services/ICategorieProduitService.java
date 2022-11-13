@@ -7,13 +7,13 @@ import com.esprit.examen.entities.CategorieProduit;
 
 public interface ICategorieProduitService {
 
-	List<CategorieProduit> retrieveAllCategorieProduits();
+/*	List<CategorieProduit> retrieveAllCategorieProduits();
 
 	CategorieProduit addCategorieProduit(CategorieProduit cp);
 
 	void deleteCategorieProduit(Long id);
 
 
-	CategorieProduit retrieveCategorieProduit(Long id);
+	CategorieProduit retrieveCategorieProduit(Long id);*/
 
 }

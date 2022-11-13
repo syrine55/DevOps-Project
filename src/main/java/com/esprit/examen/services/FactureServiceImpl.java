@@ -17,7 +17,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @Transactional
 public class FactureServiceImpl implements IFactureService {
-
+/*
 	@Autowired
 	FactureRepository factureRepository;
 	@Autowired
@@ -68,6 +68,6 @@ public class FactureServiceImpl implements IFactureService {
 		float totalRecouvrementEntreDeuxDates =reglementService.getChiffreAffaireEntreDeuxDate(startDate,endDate);
 		return (totalRecouvrementEntreDeuxDates/totalFacturesEntreDeuxDates)*100;
 	}
-	
+	*/
 
 }

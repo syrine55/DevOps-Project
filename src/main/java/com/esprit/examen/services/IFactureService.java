@@ -5,7 +5,7 @@ import java.util.List;
 import com.esprit.examen.entities.Facture;
 
 public interface IFactureService {
-	List<Facture> retrieveAllFactures();
+/*	List<Facture> retrieveAllFactures();
 
 
 	Facture addFacture(Facture f);
@@ -15,6 +15,6 @@ public interface IFactureService {
 	Facture retrieveFacture(Long id);
 	
 
-	float pourcentageRecouvrement(Date startDate, Date endDate);
+	float pourcentageRecouvrement(Date startDate, Date endDate);*/
 
 }

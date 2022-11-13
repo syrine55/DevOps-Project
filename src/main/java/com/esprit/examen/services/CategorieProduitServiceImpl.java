@@ -8,7 +8,7 @@ import com.esprit.examen.entities.CategorieProduit;
 import com.esprit.examen.repositories.CategorieProduitRepository;
 
 @Service
-public class CategorieProduitServiceImpl implements ICategorieProduitService {
+public class CategorieProduitServiceImpl implements ICategorieProduitService {/*
 
 	
 	@Autowired
@@ -38,5 +38,5 @@ public class CategorieProduitServiceImpl implements ICategorieProduitService {
 	public CategorieProduit retrieveCategorieProduit(Long id) {
 		return categorieProduitRepository.findById(id).orElse(null);
 	}
-
+*/
 }

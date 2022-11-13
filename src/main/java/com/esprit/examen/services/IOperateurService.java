@@ -4,7 +4,7 @@ import java.util.List;
 import com.esprit.examen.entities.Operateur;
 
 
-public interface IOperateurService {
+public interface IOperateurService {/*
 
 	List<Operateur> retrieveAllOperateurs();
 
@@ -12,6 +12,6 @@ public interface IOperateurService {
 
 	void deleteOperateur(Long id);
 
-	Operateur retrieveOperateur(Long id);
+	Operateur retrieveOperateur(Long id);*/
 
 }

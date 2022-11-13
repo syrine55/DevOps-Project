@@ -18,7 +18,7 @@ import io.swagger.annotations.Api;
 @RestController
 @Api(tags = "Gestion des categories Produit")
 @RequestMapping("/categorieProduit")
-public class CategorieProduitController {
+public class CategorieProduitController {/*
 
 	@Autowired
 	ICategorieProduitService categorieProduitService;
@@ -51,7 +51,7 @@ public class CategorieProduitController {
 	public void removeCategorieProduit(@PathVariable("categorieProduit-id") Long categorieProduitId) {
 		categorieProduitService.deleteCategorieProduit(categorieProduitId);
 	}
-
+*/
 
 
 	

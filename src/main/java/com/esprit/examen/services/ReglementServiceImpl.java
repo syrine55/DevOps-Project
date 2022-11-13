@@ -10,7 +10,7 @@ import com.esprit.examen.repositories.FactureRepository;
 import com.esprit.examen.repositories.ReglementRepository;
 
 @Service
-public class ReglementServiceImpl implements IReglementService {
+public class ReglementServiceImpl implements IReglementService {/*
 
 	@Autowired
 	FactureRepository factureRepository;
@@ -44,5 +44,5 @@ public class ReglementServiceImpl implements IReglementService {
 	public float getChiffreAffaireEntreDeuxDate(Date startDate, Date endDate) {
 		return reglementRepository.getChiffreAffaireEntreDeuxDate( startDate, endDate);
 	}
-
+*/
 }

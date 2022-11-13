@@ -13,7 +13,7 @@ import io.swagger.annotations.Api;
 @Api(tags = "Gestion des secteurs activites")
 @RequestMapping("/secteurActivite")
 @CrossOrigin("*")
-public class SecteurActiviteController {
+public class SecteurActiviteController {/*
 
 	@Autowired
 	ISecteurActiviteService secteurActiviteService;
@@ -41,7 +41,7 @@ public class SecteurActiviteController {
 	@ResponseBody
 	public void removeSecteurActivite(@PathVariable("secteurActivite-id") Long secteurActiviteId) {
 		secteurActiviteService.deleteSecteurActivite(secteurActiviteId);
-	}
+	}*/
 
 
 	

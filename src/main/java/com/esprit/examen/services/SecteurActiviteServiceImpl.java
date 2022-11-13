@@ -8,7 +8,7 @@ import com.esprit.examen.entities.SecteurActivite;
 import com.esprit.examen.repositories.SecteurActiviteRepository;
 
 @Service
-public class SecteurActiviteServiceImpl implements ISecteurActiviteService{
+public class SecteurActiviteServiceImpl implements ISecteurActiviteService{/*
 
 	@Autowired
 	SecteurActiviteRepository secteurActiviteRepository;
@@ -34,6 +34,6 @@ public class SecteurActiviteServiceImpl implements ISecteurActiviteService{
 	@Override
 	public SecteurActivite retrieveSecteurActivite(Long id) {
 		return secteurActiviteRepository.findById(id).orElse(null);
-	}
+	}*/
 
 }

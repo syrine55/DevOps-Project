@@ -16,7 +16,7 @@ import io.swagger.annotations.Api;
 @Api(tags = "Gestion des reglements")
 @RequestMapping("/reglement")
 @CrossOrigin("*")
-public class ReglementRestController {
+public class ReglementRestController {/*
 
     @Autowired
     IReglementService reglementService;
@@ -55,5 +55,5 @@ public class ReglementRestController {
         } catch (Exception e) {
             return 0;
         }
-    }
+    }*/
 }

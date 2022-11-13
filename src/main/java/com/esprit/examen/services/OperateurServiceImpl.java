@@ -8,7 +8,7 @@ import com.esprit.examen.entities.Operateur;
 import com.esprit.examen.repositories.OperateurRepository;
 
 @Service
-public class OperateurServiceImpl implements IOperateurService {
+public class OperateurServiceImpl implements IOperateurService {/*
 
 	@Autowired
 	OperateurRepository  operateurRepository;
@@ -34,6 +34,6 @@ public class OperateurServiceImpl implements IOperateurService {
 	@Override
 	public Operateur retrieveOperateur(Long id) {
 		return operateurRepository.findById(id).orElse(null);
-	}
+	}*/
 
 }

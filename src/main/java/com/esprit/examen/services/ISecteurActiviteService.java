@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.esprit.examen.entities.SecteurActivite;
 
-public interface ISecteurActiviteService {
+public interface ISecteurActiviteService {/*
 
 	List<SecteurActivite> retrieveAllSecteurActivite();
 
@@ -13,6 +13,6 @@ public interface ISecteurActiviteService {
 	void deleteSecteurActivite(Long id);
 
 
-	SecteurActivite retrieveSecteurActivite(Long id);
+	SecteurActivite retrieveSecteurActivite(Long id);*/
 
 }
