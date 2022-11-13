@@ -55,6 +55,7 @@ class ProduitServiceImpMockTest {
     void testUpdateProduitById()
     {
         Produit s = new Produit(30L,"stock test", "test update", 100);
+        assertNotNull(s);
         when(produitRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(s));
         produitService.updateProduit(s);
         System.out.println("update done");
