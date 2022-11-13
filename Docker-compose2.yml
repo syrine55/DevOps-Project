@@ -13,7 +13,7 @@
     container_name: tpachat
     restart: on-failure
     ports:
-      - 8090:8089
+      - 8089:8089
     depends_on:
       - mysqldb
 volumes:
