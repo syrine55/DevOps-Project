@@ -32,19 +32,6 @@ public class Produit implements Serializable {
 	private String codeProduit;
 	private String libelleProduit;
 	private float prix;
-	@Temporal(TemporalType.DATE)
-	private Date dateCreation;
-	@Temporal(TemporalType.DATE)
-	private Date dateDerniereModification;
-	@ManyToOne
-	@JsonIgnore
-	private Stock stock;
-	@OneToMany(mappedBy = "produit")
-	@JsonIgnore
-	private Set<DetailFacture> detailFacture;
-	@ManyToOne
-	@JsonIgnore
-	private CategorieProduit categorieProduit;
 
 	public Produit(Long idProduit ,String codeProduit, String libelleProduit, float prix) {
 		this.idProduit = idProduit;
@@ -52,4 +39,6 @@ public class Produit implements Serializable {
 		this.libelleProduit = libelleProduit;
 		this.prix = prix;
 	}
+
+
 }

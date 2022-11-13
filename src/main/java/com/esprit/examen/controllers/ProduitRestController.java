@@ -1,6 +1,5 @@
 package com.esprit.examen.controllers;
 
-import java.util.Date;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -8,6 +7,7 @@ import com.esprit.examen.entities.Produit;
 import com.esprit.examen.services.IProduitService;
 
 import io.swagger.annotations.Api;
+import springfox.documentation.swagger2.mappers.ModelMapper;
 
 
 @RestController
@@ -34,7 +34,7 @@ public class ProduitRestController {
 
 	@PostMapping("/add-produit")
 	@ResponseBody
-	public Produit addProduit(Produit p) {
+	public Produit addProduit(@RequestBody Produit p) {
 		return produitService.addProduit(p);
 	}
 
@@ -46,7 +46,7 @@ public class ProduitRestController {
 
 	@PutMapping("/modify-produit")
 	@ResponseBody
-	public Produit modifyProduit(Produit p) {
+	public Produit modifyProduit(@RequestBody Produit p) {
 		return produitService.updateProduit(p);
 	}
 
@@ -55,6 +55,7 @@ public class ProduitRestController {
 	public void assignProduitToStock(@PathVariable("idProduit") Long idProduit, @PathVariable("idStock") Long idStock) {
 		produitService.assignProduitToStock(idProduit, idStock);
 	}
+
 
 
 }
