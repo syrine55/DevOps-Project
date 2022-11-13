@@ -30,20 +30,20 @@ public class FactureRestController {
 
     @GetMapping("/retrieve-facture/{facture-id}")
     @ResponseBody
-    public Facture retrieveFacture(@PathVariable("facture-id") Long factureId) {
+    public Facture retrieveFacture(Long factureId) {
         return factureService.retrieveFacture(factureId);
     }
 
     @PostMapping("/add-facture")
     @ResponseBody
-    public Facture addFacture(@RequestBody Facture f) {
+    public Facture addFacture(Facture f) {
         return factureService.addFacture(f);
     }
 
 
     @PutMapping("/cancel-facture/{facture-id}")
     @ResponseBody
-    public void cancelFacture(@PathVariable("facture-id") Long factureId) {
+    public void cancelFacture(Long factureId) {
         factureService.cancelFacture(factureId);
     }
 
