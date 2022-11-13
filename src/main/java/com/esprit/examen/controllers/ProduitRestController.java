@@ -13,7 +13,7 @@ import io.swagger.annotations.Api;
 @CrossOrigin("*")
 @Api(tags = "Gestion des produits")
 @RequestMapping("/produit")
-public class ProduitRestController {
+public class ProduitRestController {/*
 
 	@Autowired
 	IProduitService produitService;
@@ -50,7 +50,7 @@ public class ProduitRestController {
 	public Produit modifyProduit(@RequestBody Produit p) {
 		return produitService.updateProduit(p);
 	}
-
+*/
 
 
 
