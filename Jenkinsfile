@@ -36,10 +36,10 @@ pipeline {
                 ], 
                 credentialsId: 'nexus', 
                 groupId: 'com.esprit.examen', 
-                nexusUrl: '192.168.1.13:8081', 
+                nexusUrl: '192.168.1.52:8081', 
                 nexusVersion: 'nexus3', 
                 protocol: 'http', 
-                repository: 'maven-devops-release', 
+                repository: 'maven-repo-tp-achat', 
                 version: '1.0'
                 
             }
@@ -47,13 +47,13 @@ pipeline {
         stage('Pull artifact from Nexus'){
             steps{
                 
-                sh "curl http://192.168.1.13:8081/repository/maven-devops-release/com/esprit/examen/tpAchatProject/1.0/tpAchatProject-1.0.jar --output tpAchatProject-1.0.jar";
+                sh "curl http://192.168.1.52:8081/repository/maven-repo-tp-achat/com/esprit/examen/tpAchatProject/1.0/tpAchatProject-1.0.jar --output tpAchatProject-1.0.jar";
             }
         }
         stage('Build image') {
             steps{
                 script{
-                    dockerImage = docker.build "192.168.1.13:8082/repository/docker-devops-project-releases/achatprojet:latest"
+                    dockerImage = docker.build "192.168.1.52:8082/repository/docker/achatprojet:latest"
                 }
             }
         }
@@ -62,8 +62,8 @@ pipeline {
             steps {
                 
                 script{
-                    withDockerRegistry([credentialsId: 'nexus', url: 'http://192.168.1.13:8082/repository/docker-devops-project-releases/']) {
-                        sh "docker push 192.168.1.13:8082/repository/docker-devops-project-releases/achatprojet:latest"
+                    withDockerRegistry([credentialsId: 'nexus', url: 'http://192.168.1.52:8082/repository/docker/']) {
+                        sh "docker push 192.168.1.52:8082/repository/docker/achatprojet:latest"
                     }
                 }
             }
