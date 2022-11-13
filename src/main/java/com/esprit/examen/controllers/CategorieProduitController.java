@@ -40,8 +40,8 @@ public class CategorieProduitController {
 
 	@PostMapping("/add-categorieProduit")
 	@ResponseBody
-	public CategorieProduit addCategorieProduit(@RequestBody CategorieProduit cp) {
-		return categorieProduitService.addCategorieProduit(cp);
+	public void addCategorieProduit(@RequestBody CategorieProduit cp) {
+		categorieProduitService.addCategorieProduit(cp);
 	}
 
 
