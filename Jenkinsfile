@@ -79,7 +79,7 @@ pipeline {
         }
         stage('Docker compose App with DB') {
             steps {
-               sh "sudo docker compose up -d"
+               sh "sudo docker compose -f Docker-compose2.yml up -d"
             }
         }
 
