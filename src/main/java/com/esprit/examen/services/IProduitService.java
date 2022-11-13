@@ -15,6 +15,5 @@ public interface IProduitService {
 
 	Produit retrieveProduit(Long id);
 
-	void assignProduitToStock(Long idProduit, Long idStock);
 
 }
