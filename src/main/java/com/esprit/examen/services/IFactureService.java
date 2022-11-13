@@ -7,7 +7,6 @@ import com.esprit.examen.entities.Facture;
 public interface IFactureService {
 	List<Facture> retrieveAllFactures();
 
-	List<Facture> getFacturesByFournisseur(Long idFournisseur);
 
 	Facture addFacture(Facture f);
 
@@ -15,7 +14,6 @@ public interface IFactureService {
 
 	Facture retrieveFacture(Long id);
 	
-	void assignOperateurToFacture(Long idOperateur, Long idFacture);
 
 	float pourcentageRecouvrement(Date startDate, Date endDate);
 

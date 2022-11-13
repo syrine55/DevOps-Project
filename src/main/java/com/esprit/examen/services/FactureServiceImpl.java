@@ -6,8 +6,6 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.esprit.examen.entities.Facture;
-import com.esprit.examen.entities.Fournisseur;
-import com.esprit.examen.entities.Operateur;
 import com.esprit.examen.repositories.DetailFactureRepository;
 import com.esprit.examen.repositories.FactureRepository;
 import com.esprit.examen.repositories.FournisseurRepository;
@@ -62,19 +60,7 @@ public class FactureServiceImpl implements IFactureService {
 		return factureRepository.findById(factureId).orElse(null);
 	}
 
-	@Override
-	public List<Facture> getFacturesByFournisseur(Long idFournisseur) {
-		Fournisseur fournisseur = fournisseurRepository.findById(idFournisseur).orElse(null);
-		return (List<Facture>) fournisseur.getFactures();
-	}
 
-	@Override
-	public void assignOperateurToFacture(Long idOperateur, Long idFacture) {
-		Facture facture = factureRepository.findById(idFacture).orElse(null);
-		Operateur operateur = operateurRepository.findById(idOperateur).orElse(null);
-		operateur.getFactures().add(facture);
-		operateurRepository.save(operateur);
-	}
 
 	@Override
 	public float pourcentageRecouvrement(Date startDate, Date endDate) {
