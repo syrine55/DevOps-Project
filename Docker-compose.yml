@@ -31,7 +31,7 @@ services:
     volumes:
       - grafana-storage:/var/lib/grafana
     ports:
-      - 9090:9090 
+      - 3000:3000
 volumes:
  jenkins_home:
    external: true
