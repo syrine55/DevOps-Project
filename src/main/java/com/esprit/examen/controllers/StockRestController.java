@@ -48,6 +48,7 @@ public class StockRestController {
 
 	@PutMapping("/modify-stock")
 	@ResponseBody
+	@SuppressWarnings("java:S4684")
 	public Stock modifyStock(@RequestBody Stock stock) {
 		return stockService.updateStock(stock);
 	}
