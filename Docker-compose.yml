@@ -9,7 +9,7 @@ services:
   nexus:
     image: sonatype/nexus3
     volumes:
-      - /home/nexus/nexus-data:/nexus-data
+      - /home/nexus/nexus-data:/sonatype-work
     ports:
       - 8081:8081
       - 8082:8082
