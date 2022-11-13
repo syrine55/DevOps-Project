@@ -21,7 +21,7 @@ import io.swagger.annotations.Api;
 @RequestMapping("/fournisseur")
 public class FournisseurRestController {
 
-	@Autowired
+	/*@Autowired
 	IFournisseurService fournisseurService;
 
 	@GetMapping("/retrieve-all-fournisseurs")
@@ -48,7 +48,7 @@ public class FournisseurRestController {
 	public void removeFournisseur(@PathVariable("fournisseur-id") Long fournisseurId) {
 		fournisseurService.deleteFournisseur(fournisseurId);
 	}
-
+*/
 
 
 }

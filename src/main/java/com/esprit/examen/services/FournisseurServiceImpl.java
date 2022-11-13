@@ -18,7 +18,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class FournisseurServiceImpl implements IFournisseurService {
 
-	@Autowired
+/*	@Autowired
 	FournisseurRepository fournisseurRepository;
 	@Autowired
 	DetailFournisseurRepository detailFournisseurRepository;
@@ -57,7 +57,7 @@ public class FournisseurServiceImpl implements IFournisseurService {
 	@Override
 	public Fournisseur retrieveFournisseur(Long fournisseurId) {
 		return fournisseurRepository.findById(fournisseurId).orElse(null);
-	}
+	}*/
 
 
 
