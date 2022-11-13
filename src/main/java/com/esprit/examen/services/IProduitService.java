@@ -5,7 +5,7 @@ import com.esprit.examen.entities.Produit;
 
 public interface IProduitService {
 
-	List<Produit> retrieveAllProduits();
+	//List<Produit> retrieveAllProduits();
 
 	Produit addProduit(Produit p);
 

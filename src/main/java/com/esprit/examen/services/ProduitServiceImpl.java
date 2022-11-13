@@ -21,11 +21,11 @@ public class ProduitServiceImpl implements IProduitService {
 	ProduitRepository produitRepository;
 
 
-	@Override
+	/*@Override
 	public List<Produit> retrieveAllProduits() {
 		List<Produit> produits = produitRepository.findAll();
 		return produits;
-	}
+	}*/
 
 	@Transactional
 	public Produit addProduit(Produit p) {
