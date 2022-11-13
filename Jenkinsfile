@@ -9,7 +9,7 @@ pipeline {
                     credentialsId: 'gitCredentials';
             }
         }
-        stage('sonar') {
+     /*   stage('sonar') {
             steps {
                 sh "mvn sonar:sonar -Dsonar.login=admin -Dsonar.password=vagrant";
             }
@@ -18,7 +18,7 @@ pipeline {
             steps {
                 sh "mvn clean test -Ptest";
             }
-        }
+        }*/
         stage('build') {
             steps {
                 sh "mvn clean package -Pprod";
