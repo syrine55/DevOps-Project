@@ -20,6 +20,18 @@ services:
       - /home/sonarqube/data:/opt/sonarqube/data
     ports:
       - 9000:9000
+  prometheus:
+    image: prom/prometheus
+    volumes:
+      - /home/vagrant/prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - 9090:9090
+  graphana:
+    image: grafana/grafana
+    volumes:
+      - grafana-storage:/var/lib/grafana
+    ports:
+      - 9090:9090
   mysqldb:
     container_name: mysqldb
     image: mysql:8
@@ -38,6 +50,8 @@ services:
       - mysqldb     
 volumes:
  jenkins_home:
+   external: true
+ grafana-storage:
    external: true
  mysql_volume:
    external: true 
