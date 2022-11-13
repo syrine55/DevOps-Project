@@ -47,16 +47,7 @@ public class FactureRestController {
         factureService.cancelFacture(factureId);
     }
 
-    @GetMapping("/getFactureByFournisseur/{fournisseur-id}")
-    @ResponseBody
-    public List<Facture> getFactureByFournisseur(@PathVariable("fournisseur-id") Long fournisseurId) {
-        return factureService.getFacturesByFournisseur(fournisseurId);
-    }
 
-    @PutMapping(value = "/assignOperateurToFacture/{idOperateur}/{idFacture}")
-    public void assignOperateurToFacture(@PathVariable("idOperateur") Long idOperateur, @PathVariable("idFacture") Long idFacture) {
-        factureService.assignOperateurToFacture(idOperateur, idFacture);
-    }
 
     @GetMapping(value = "/pourcentageRecouvrement/{startDate}/{endDate}")
     public float pourcentageRecouvrement(
