@@ -1,11 +1,7 @@
 package com.esprit.examen.controllers;
 
-import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import com.esprit.examen.entities.SecteurActivite;
-import com.esprit.examen.services.ISecteurActiviteService;
 
 import io.swagger.annotations.Api;
 

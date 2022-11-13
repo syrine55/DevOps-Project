@@ -1,11 +1,7 @@
 package com.esprit.examen.services;
 
-import java.util.List;
-
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.esprit.examen.entities.CategorieProduit;
-import com.esprit.examen.repositories.CategorieProduitRepository;
+
 
 @Service
 public class CategorieProduitServiceImpl implements ICategorieProduitService {/*
