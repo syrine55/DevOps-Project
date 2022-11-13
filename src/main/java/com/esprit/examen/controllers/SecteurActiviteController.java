@@ -32,6 +32,7 @@ public class SecteurActiviteController {
 
 	@PostMapping("/add-secteurActivite")
 	@ResponseBody
+	@SuppressWarnings("java:S4684")
 	public SecteurActivite addSecteurActivite(@RequestBody SecteurActivite sa) {
 		return secteurActiviteService.addSecteurActivite(sa);
 	}

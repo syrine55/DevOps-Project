@@ -36,6 +36,7 @@ public class FactureRestController {
 
     @PostMapping("/add-facture")
     @ResponseBody
+    @SuppressWarnings("java:S4684")
     public Facture addFacture(Facture f) {
         return factureService.addFacture(f);
     }

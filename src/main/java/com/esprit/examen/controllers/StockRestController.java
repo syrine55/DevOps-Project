@@ -35,6 +35,7 @@ public class StockRestController {
 
 	@PostMapping("/add-stock")
 	@ResponseBody
+	@SuppressWarnings("java:S4684")
 	public Stock addStock(@RequestBody Stock s) {
 		return stockService.addStock(s);
 	}
