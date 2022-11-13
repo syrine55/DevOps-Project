@@ -9,7 +9,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
     volumes:
-      - mysql_volume:/var/lib/mysql
+       - mysql_volume:/var/lib/mysql
   spring_app:
     image: tpachat
     container_name: tpachat
