@@ -58,7 +58,7 @@ pipeline {
             }
         }
 
-        stage('Push image to Nexus') {
+        stage('Push docker to Nexus') {
             steps {
                 
                 script{
