@@ -20,9 +20,9 @@ public class CategorieProduitServiceImpl implements ICategorieProduitService {
 	}
 
 	@Override
-	public void addCategorieProduit(CategorieProduit cp) {
+	public CategorieProduit addCategorieProduit(CategorieProduit cp) {
 		categorieProduitRepository.save(cp);
-
+		return cp;
 	}
 
 	@Override
