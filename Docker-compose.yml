@@ -31,27 +31,9 @@ services:
     volumes:
       - grafana-storage:/var/lib/grafana
     ports:
-      - 9090:9090
-  mysqldb:
-    container_name: mysqldb
-    image: mysql:8
-    restart: unless-stopped
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-    volumes:
-      - mysql_volume:/var/lib/mysql
-  spring_app:
-    image: tpachat
-    container_name: tpachat
-    restart: on-failure
-    ports:
-      - 8090:8089
-    depends_on:
-      - mysqldb     
+      - 9090:9090 
 volumes:
  jenkins_home:
    external: true
  grafana-storage:
    external: true
- mysql_volume:
-   external: true 
