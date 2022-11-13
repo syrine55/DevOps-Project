@@ -8,9 +8,9 @@ import org.springframework.stereotype.Service;
 import com.esprit.examen.entities.CategorieProduit;
 import com.esprit.examen.entities.Produit;
 import com.esprit.examen.entities.Stock;
-import com.esprit.examen.repositories.CategorieProduitRepository;
+//import com.esprit.examen.repositories.CategorieProduitRepository;
 import com.esprit.examen.repositories.ProduitRepository;
-import com.esprit.examen.repositories.StockRepository;
+//import com.esprit.examen.repositories.StockRepository;
 import lombok.extern.slf4j.Slf4j;
 
 @Service
@@ -19,10 +19,7 @@ public class ProduitServiceImpl implements IProduitService {
 
 	@Autowired
 	ProduitRepository produitRepository;
-	@Autowired
-	StockRepository stockRepository;
-	@Autowired
-	CategorieProduitRepository categorieProduitRepository;
+
 
 	@Override
 	public List<Produit> retrieveAllProduits() {
