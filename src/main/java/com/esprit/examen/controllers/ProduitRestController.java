@@ -10,45 +10,7 @@ import io.swagger.annotations.Api;
 @CrossOrigin("*")
 @Api(tags = "Gestion des produits")
 @RequestMapping("/produit")
-public class ProduitRestController {/*
-
-	@Autowired
-	IProduitService produitService;
-
-	@GetMapping("/retrieve-all-produits")
-	@ResponseBody
-	public List<Produit> getProduits() {
-		return produitService.retrieveAllProduits();
-	}
-
-	@GetMapping("/retrieve-produit/{produit-id}")
-	@ResponseBody
-	public Produit retrieveRayon(@PathVariable("produit-id") Long produitId) {
-		return produitService.retrieveProduit(produitId);
-	}
-
-
-	@PostMapping("/add-produit")
-	@ResponseBody
-	@SuppressWarnings("java:S4684")
-	public Produit addProduit(@RequestBody Produit p) {
-		return produitService.addProduit(p);
-	}
-
-	@DeleteMapping("/remove-produit/{produit-id}")
-	@ResponseBody
-	public void removeProduit(@PathVariable("produit-id") Long produitId) {
-		produitService.deleteProduit(produitId);
-	}
-
-	@PutMapping("/modify-produit")
-	@ResponseBody
-	@SuppressWarnings("java:S4684")
-	public Produit modifyProduit(@RequestBody Produit p) {
-		return produitService.updateProduit(p);
-	}
-*/
-
+public class ProduitRestController {
 
 
 

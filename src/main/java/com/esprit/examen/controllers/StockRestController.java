@@ -12,41 +12,7 @@ import io.swagger.annotations.Api;
 @CrossOrigin("*")
 public class StockRestController {
 
-	/*@Autowired
-	IStockService stockService;
 
-	@GetMapping("/retrieve-all-stocks")
-	@ResponseBody
-	public List<Stock> getStocks() {
-		return stockService.retrieveAllStocks();
-	}
-
-	@GetMapping("/retrieve-stock/{stock-id}")
-	@ResponseBody
-	public Stock retrieveStock(@PathVariable("stock-id") Long stockId) {
-		return stockService.retrieveStock(stockId);
-	}
-
-	@PostMapping("/add-stock")
-	@ResponseBody
-	@SuppressWarnings("java:S4684")
-	public Stock addStock(@RequestBody Stock s) {
-		return stockService.addStock(s);
-	}
-
-	@DeleteMapping("/remove-stock/{stock-id}")
-	@ResponseBody
-	public void removeStock(@PathVariable("stock-id") Long stockId) {
-		stockService.deleteStock(stockId);
-	}
-
-	@PutMapping("/modify-stock")
-	@ResponseBody
-	@SuppressWarnings("java:S4684")
-	public Stock modifyStock(@RequestBody Stock stock) {
-		return stockService.updateStock(stock);
-	}
-*/
 
 
 

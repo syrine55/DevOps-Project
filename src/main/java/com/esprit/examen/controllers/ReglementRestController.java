@@ -9,44 +9,5 @@ import io.swagger.annotations.Api;
 @Api(tags = "Gestion des reglements")
 @RequestMapping("/reglement")
 @CrossOrigin("*")
-public class ReglementRestController {/*
-
-    @Autowired
-    IReglementService reglementService;
-
-
-    @PostMapping("/add-reglement")
-    @ResponseBody
-    @SuppressWarnings("java:S4684")
-    public Reglement addReglement(@RequestBody Reglement r) {
-        return reglementService.addReglement(r);
-    }
-    @GetMapping("/retrieve-all-reglements")
-    @ResponseBody
-    public List<Reglement> getReglement() {
-        return reglementService.retrieveAllReglements();
-    }
-
-    @GetMapping("/retrieve-reglement/{reglement-id}")
-    @ResponseBody
-    public Reglement retrieveReglement(@PathVariable("reglement-id") Long reglementId) {
-        return reglementService.retrieveReglement(reglementId);
-    }
-
-    @GetMapping("/retrieveReglementByFacture/{facture-id}")
-    @ResponseBody
-    public List<Reglement> retrieveReglementByFacture(@PathVariable("facture-id") Long factureId) {
-        return reglementService.retrieveReglementByFacture(factureId);
-    }
-
-    @GetMapping(value = "/getChiffreAffaireEntreDeuxDate/{startDate}/{endDate}")
-    public float getChiffreAffaireEntreDeuxDate(
-            @PathVariable(name = "startDate") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) Date startDate,
-            @PathVariable(name = "endDate") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) Date endDate) {
-        try {
-            return reglementService.getChiffreAffaireEntreDeuxDate(startDate, endDate);
-        } catch (Exception e) {
-            return 0;
-        }
-    }*/
+public class ReglementRestController {
 }

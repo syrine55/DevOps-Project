@@ -7,40 +7,7 @@ import io.swagger.annotations.Api;
 @RestController
 @Api(tags = "Gestion des categories Produit")
 @RequestMapping("/categorieProduit")
-public class CategorieProduitController {/*
-
-	@Autowired
-	ICategorieProduitService categorieProduitService;
-	
-
-	@GetMapping("/retrieve-all-categorieProduit")
-	@ResponseBody
-	public List<CategorieProduit> getCategorieProduit() {
-		return categorieProduitService.retrieveAllCategorieProduits();
-	}
-
-
-	@GetMapping("/retrieve-categorieProduit/{categorieProduit-id}")
-	@ResponseBody
-	public CategorieProduit retrieveCategorieProduit(@PathVariable("categorieProduit-id") Long categorieProduitId) {
-		return categorieProduitService.retrieveCategorieProduit(categorieProduitId);
-	}
-
-
-	@PostMapping("/add-categorieProduit")
-	@ResponseBody
-	@SuppressWarnings("java:S4684")
-	public CategorieProduit addCategorieProduit(@RequestBody CategorieProduit cp) {
-		return categorieProduitService.addCategorieProduit(cp);
-	}
-
-
-	@DeleteMapping("/remove-categorieProduit/{categorieProduit-id}")
-	@ResponseBody
-	public void removeCategorieProduit(@PathVariable("categorieProduit-id") Long categorieProduitId) {
-		categorieProduitService.deleteCategorieProduit(categorieProduitId);
-	}
-*/
+public class CategorieProduitController {
 
 
 	
