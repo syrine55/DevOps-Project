@@ -68,6 +68,20 @@ pipeline {
                 }
             }
         }
+        stage('Pull image from Nexus') {
+            steps {
+                script{
+                    withDockerRegistry([credentialsId: 'nexus', url: 'http://192.168.1.52:8082/repository/docker/) {
+                        sh "docker pull 192.168.1.52:8082/repository/docker/achatprojet:latest"
+                    }
+                }
+            }
+        }
+        stage('Docker compose App with DB') {
+            steps {
+               sh "sudo docker compose up -d"
+            }
+        }
 
     }
 }
