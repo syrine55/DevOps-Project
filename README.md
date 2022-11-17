@@ -2,9 +2,9 @@
 
 ## This project is composed of several steps:
 
-✅ Developing our #application using **Springboot** .
+✅ Developing our application using #Springboot and **Angular**.
 
-✅ Managing #SpringBoot application using **Maven**.
+✅ Managing SpringBoot application using **Maven**.
 
 ✅ Triggering pipeline build event with **GitHub**.
 
