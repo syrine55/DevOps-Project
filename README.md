@@ -2,9 +2,9 @@
 
 ## This project is composed of several steps:
 
-✅ Developing our application using #Springboot and **Angular**.
+✅ Developing our #application using #Springboot and **Angular**.
 
-✅ Managing SpringBoot application using **Maven**.
+✅ Managing #SpringBoot application using **Maven**.
 
 ✅ Triggering pipeline build event with **GitHub**.
 
@@ -20,7 +20,7 @@
 
 ✅ Continuous integration and automation using **Jenkins** **Pipeline.**
 
-✅ Continuous delivery by pushing generated #Docker to **Nexus3.**
+✅ Continuous delivery by pushing generated **Docker** to **Nexus3.**
 
 ✅ Data tracking and visualization with **prometheus** and **Grafana**
 
