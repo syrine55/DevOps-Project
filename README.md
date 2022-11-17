@@ -2,7 +2,7 @@
 
 ## This project is composed of several steps:
 
-✅ Developing our #application using #Springboot and **Angular**.
+✅ Developing our #application using **Springboot** .
 
 ✅ Managing #SpringBoot application using **Maven**.
 
