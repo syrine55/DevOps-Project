@@ -6,7 +6,7 @@
 
 ✅ Managing SpringBoot application using **Maven**.
 
-✅ Triggering pipeline build event with **GitHub**.
+✅ Triggering pipeline build event with **GitHub** **Webhook** using **Ngrok** tool.
 
 ✅ Managing and keeping track of my source code and controlling versions using **Git** with **GitHub** hosting service.
 
